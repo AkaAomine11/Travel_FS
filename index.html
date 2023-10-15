@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Travel Itinerary Generator</title>
+</head>
+<body>
+    </div>    
+    <header role="banner">
+        <div class="title">Plan Your Travel Itinerary</div>
+        <div class="language-select">
+            <select id="language-dropdown" onchange="setLanguage(this.value)">
+                <option value="eng">ENG</option>
+                <option value="fr">FR</option>
+                <option value="ita">ITA</option>
+                <option value="ger">GER</option>
+                <option value="por">POR</option>
+                <option value="spa">SPA</option>
+            </select>
+        </div>
+    </header>
+    <div class="header-tabs-wrapper"></div>
+    <div class="tabs">
+        <ul>
+            <li class="tab-item" id="home-tab" data-for="home-content" data-translate="Home">Home</li>
+            <li class="tab-item" id="experiences-tab" data-for="experiences-content" data-translate="Our own experiences">Our own experiences</li>
+            <li class="tab-item" id="services-tab" data-for="services-content" data-translate="Services">Services</li>
+            <li class="tab-item" id="about-tab" data-for="about-content" data-translate="About us">About us</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="home-content">
+        <div class="container">
+            <section class="intro">
+                <div class="welcome-section">
+                  <h1 class="welcome-word" data-translate="Welcome">Welcome</h1><br>
+                  <h1 class="rest-of-text" data-translate="to our travel itinerary generator!">to our travel itinerary generator!</h1>
+                  <h3 data-translate="Crafting Journeys for Adventurers">Crafting Journeys for Adventurers</h3>
+                </div>
+              </section>              
+            <div class="section-divider">
+                        <div class="welcome-text">
+        <main role="main">
+            <div class="tab-content" id="content-home-content"></div>
+            <section class="introduction">
+                <div id="intro-message">
+                    <p data-translate="🌍✈️ Welcome to our vibrant travel world! ✈️🌍">🌍✈️ Welcome to our vibrant travel world! ✈️🌍</p>
+                    <p data-translate="As fellow adventurers and a passionate couple who've explored the world together, we understand the joy of discovering new places and cultures. Our shared experiences have inspired us to create this website, aiming to make your travel planning journey as exciting as your actual trip.">As fellow adventurers and a passionate couple who've explored the world together, we understand the joy of discovering new places and cultures. Our shared experiences have inspired us to create this website, aiming to make your travel planning journey as exciting as your actual trip.</p>
+                    <p data-translate="Are you tired of spending hours researching and planning your itinerary? We're here to help! With our easy-to-use tool, you can create a personalized travel plan that suits your preferences and saves you precious time. Whether it's a romantic getaway, an adventurous expedition, or a relaxing escape, we've got you covered.">Are you tired of spending hours researching and planning your itinerary? We're here to help! With our easy-to-use tool, you can create a personalized travel plan that suits your preferences and saves you precious time. Whether it's a romantic getaway, an adventurous expedition, or a relaxing escape, we've got you covered.</p>
+                    <p data-translate="Let's embark on this journey together, one destination at a time. Let us take care of the planning, so you can focus on making memories that last a lifetime.">Let's embark on this journey together, one destination at a time. Let us take care of the planning, so you can focus on making memories that last a lifetime.</p>
+                    <p data-translate="Safe travels and happy exploring!">Safe travels and happy exploring!</p>
+                    <p>Sindì & Francesco</p>
+                </div>
+            </section>
+        </div>
+            <div class="section-divider"></div>
+            <section class="preferences">
+                <h2 data-translate="Select Your Preferences">Select Your Preferences</h2>
+                <form id="preferences-form">
+                    <label for="country" data-translate="Country">Country:</label>
+                    <input type="text" id="country" name="country" required><br><br>
+    
+                    <label for="city" data-translate="City">City:</label>
+                    <input type="text" id="city" name="city" required><br><br>
+    
+                    <label for="duration" data-translate="How long (in days)">How long (in days):</label>
+                    <input type="number" id="duration" name="duration" min="1" required><br><br>
+    
+                    <label for="travel-type" data-translate="What kind of travel">What kind of travel:</label>
+                    <select id="travel-type" name="travel-type">
+                        <option value="busy" data-translate="Busy">Busy</option>
+                        <option value="relax" data-translate="Relax">Relax</option>
+                        <option value="half-half" data-translate="Half & Half">Half & Half</option>
+                    </select><br><br>
+
+                    <label for="budget">Budget:</label>
+                    <select id="budget" name="budget">
+                        <option value="cheap" data-translate="Cheap">Cheap</option>
+                        <option value="normal" data-translate="Normal">Normal</option>
+                        <option value="expensive" data-translate="Expensive">Expensive</option>
+                    </select><br><br>
+                    <button type="submit" data-translate="Ask your Itinerary">Ask your Itinerary</button>
+                </form>
+            </section>
+            <div class="section-divider"></div>
+    
+            </div>
+            <div class="assistance">
+                Need assistance? <a href="mailto:info@travelitinerary.com">contact us</a>
+            </div>
+        </div>
+        </main>
+        <div class="section-divider"></div>  
+    </div>
+    <div class="tab-content" id="experiences-content">
+        <h2 data-translate="Discover Unique Experiences">Discover Unique Experiences</h2>
+        <p data-translate="Embark on unforgettable adventures with our handpicked collection of experiences. From cultural tours and thrilling activities to hidden gems, we curate experiences that create lasting memories.">Embark on unforgettable adventures with our handpicked collection of experiences. From cultural tours and thrilling activities to hidden gems, we curate experiences that create lasting memories.</p>
+        <p data-translate="Explore new horizons and immerse yourself in the essence of each destination. Get ready for an extraordinary journey!">Explore new horizons and immerse yourself in the essence of each destination. Get ready for an extraordinary journey!</p>
+        <!-- Thailand Section -->
+        <div class="destination-section">
+            <div class="images-wrapper">
+                <img src="thai.jpg" alt="Thailand Image 1" loading="lazy">
+                <img src="thai2.jpg" alt="Thailand Image 2" loading="lazy">
+            </div>
+            <div class="destination-description">
+                <h4>Whispers & Wonders of Thailand</h4>
+                <p>From Bangkok's electrifying pulse to Phuket's serene shores, our journey through Thailand was more than sightseeing—it was heart-feeling. </p>
+                <p>With every temple's golden glow and street food's tantalizing taste, we deepened our bond, not just as travelers but soulmates. The warm smiles of the locals mirrored our own joy. </p>
+                <p>As we ventured, hand in hand, from bustling markets to tranquil beaches, Thailand became more than a destination—it was a vivid chapter in our love story.</p>
+                <p>In the Land of Smiles, we found not only beauty but a reflection of our own enduring love.</p>
+            </div>
+        </div>
+        <!-- Mallorca Section -->
+        <div class="destination-section">
+            <div class="images-wrapper">
+                <img src="palma.jpg" alt="Mallorca Image 1">
+                <img src="palma.jpg" alt="Mallorca Image 2">
+            </div>
+            <div class="destination-description">
+                <h4>Sun-Kissed Memories in Palma de Majorca</h4>
+                <p>From the vibrant streets of Palma to the secluded beaches of Cala d'Or, our Majorca escapade was a blend of discovery and delight.</p>
+                <p>Palma's majestic cathedrals and bustling marketplaces offered a rich taste of history and local life. Every corner, with its blend of Spanish and Moorish influences, spoke of stories waiting to be uncovered.</p>
+                <p>The harmonious melodies of Spanish guitars, paired with the island’s tantalizing tapas, made for unforgettable evenings.</p>
+                <p>Whether exploring ancient fortresses or relaxing on sun-kissed shores, Majorca provided a tapestry of experiences that went beyond mere travel—it was a genuine Balearic immersion.</p>
+            </div>
+        </div>
+        <!-- Swiss Section -->
+        <div class="destination-section">
+            <div class="images-wrapper">
+                <img src="swiss.jpg" alt="Swiss Image 1">
+                <img src="swiss2.jpg" alt="Swiss Image 2">
+            </div>
+            <div class="destination-description">
+                <h4>Home's Heartbeat: Swiss Symphony</h4>
+                <p>Living amidst Switzerland's beauty, we often overlook the magic right outside our door. Yet, every day is a gentle reminder.</p>
+                <p>From Zurich's familiar streets to the quiet majesty of the Alps, our love story unfolds with every sunrise over the Matterhorn and each shimmer on Lake Lucerne.</p>
+                <p>The rhythmic chime of cowbells and the rich aroma of fresh raclette aren't just sensory pleasures—they're the melodies and fragrances of our shared life. Here, in this land of timeless elegance, we don't just reside; we thrive, love, and grow—our bond deepening with every Swiss sunset.</p>
+                <p>In our homeland, every moment becomes a testament to a love as enduring as Switzerland itself.</p>
+            </div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" onclick="testClick()">&times;</span>
+            <img id="lightbox-img">
+        </div>
+    </div>
+    <div class="tab-content" id="services-content">
+        <div id="video-overlay">
+            <video id="intro-video" autoplay muted>
+                <source src="Intro.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2 data-translate="Your Personal Travel Guide">Your Personal Travel Guide</h2>
+        <p data-translate="Our services go beyond creating itineraries. We're your personal travel guide, assisting you at every step of the journey. We provide recommendations, tips, and local insights to enhance your trip.">Our services go beyond creating itineraries. We're your personal travel guide, assisting you at every step of the journey. We provide recommendations, tips, and local insights to enhance your trip.</p>
+        <p data-translate="Whether you're looking for accommodations, transportation, or dining options, we've got the expertise to make your travel experience seamless and enjoyable.">Whether you're looking for accommodations, transportation, or dining options, we've got the expertise to make your travel experience seamless and enjoyable.</p>
+    </div>
+    <div class="tab-content" id="about-content">
+        <h2 data-translate="Meet the Team">Meet the Team</h2>
+        <p data-translate="We're a passionate couple, Sindì and Francesco, who share a love for travel and exploration. Our own journeys have inspired us to create a platform that simplifies travel planning for fellow adventurers.">We're a passionate couple, Sindì and Francesco, who share a love for travel and exploration. Our own journeys have inspired us to create a platform that simplifies travel planning for fellow adventurers.</p>
+        <p data-translate="We believe that every journey should be unique and memorable. With our expertise and dedication, we're committed to helping you create extraordinary travel experiences.">We believe that every journey should be unique and memorable. With our expertise and dedication, we're committed to helping you create extraordinary travel experiences.</p>
+    </div>
+    <footer role="contentinfo">
+        <p class="signature">Safe travels and happy exploring!</p>
+    </footer>
+    <div class="section-divider"></div>
+    <script src="script2.js"></script>
+
+<footer role="contentinfo">
+    <div class="footer-content">
+        <p>Follow us on social media</p>
+        
+<div class="social-icons">
+    <a href="https://instagram.com/your_username" target="_blank">
+        <img src="instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://twitter.com/your_username" target="_blank">
+        <img src="twitter-icon.png" alt="Twitter">
+    </a>
+    <a href="https://facebook.com/your_username" target="_blank">
+        <img src="facebook-icon.png" alt="Facebook">
+    </a>
+</div>
+
+    </div>
+</footer>
+
+</body>
+</html>
